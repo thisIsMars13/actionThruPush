@@ -10,7 +10,7 @@ describe("Testing GitCommand.status()", function(){
     it('Should return information if has changes in directory', function(){
         let wd = new WorkingDirectory();
         wd.addFile("index.html", "views", "<html>Hello</html>");
-        wd.addFile("index.js", "assets/scripts", "alert('Hi!')");
+        wd.addFile("index.js", "assets/scripts", "alert('Hi!!!!')");
 
         let git = new GitCommand(wd);
         let output = git.status();
